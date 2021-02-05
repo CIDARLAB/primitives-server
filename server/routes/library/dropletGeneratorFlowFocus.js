@@ -1,7 +1,6 @@
 import Template from "./template";
 import paper from "paper";
 import ComponentPort from "../core/componentPort";
-import { RedFormat, TangentSpaceNormalMap } from "three";
 
 export default class DropletGeneratorFlowFocus extends Template {
     constructor() {
@@ -57,7 +56,7 @@ export default class DropletGeneratorFlowFocus extends Template {
         };
 
         this.__maximum = {
-            // componentSpacing: 10000,
+            componentSpacing: 10000,
             oilChannelWidth: 2000,
             waterChannelWidth: 2000,
             length: 20000,
@@ -68,7 +67,7 @@ export default class DropletGeneratorFlowFocus extends Template {
         };
 
         this.__featureParams = {
-            // componentSpacing: "componentSpacing",
+            componentSpacing: "componentSpacing",
             position: "position",
             oilChannelWidth: "oilChannelWidth",
             waterChannelWidth: "waterChannelWidth",
@@ -80,7 +79,7 @@ export default class DropletGeneratorFlowFocus extends Template {
         };
 
         this.__targetParams = {
-            // componentSpacing: "componentSpacing",
+            componentSpacing: "componentSpacing",
             oilChannelWidth: "oilChannelWidth",
             waterChannelWidth: "waterChannelWidth",
             length: "length",

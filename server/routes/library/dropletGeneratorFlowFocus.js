@@ -1,6 +1,7 @@
 import Template from "./template";
 import paper from "paper";
 import ComponentPort from "../core/componentPort";
+import { RedFormat, TangentSpaceNormalMap } from "three";
 
 export default class DropletGeneratorFlowFocus extends Template {
     constructor() {

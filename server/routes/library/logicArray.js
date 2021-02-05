@@ -1,6 +1,9 @@
 import Template from "./template";
 import paper from "paper";
 import ComponentPort from "../core/componentPort";
+import { components } from "@dagrejs/graphlib/lib/alg";
+import { folder } from "jszip/lib/object";
+// import CSG from "@jscad/csg";
 
 export default class LogicArray extends Template {
     constructor() {

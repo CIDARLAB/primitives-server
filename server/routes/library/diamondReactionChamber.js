@@ -92,9 +92,9 @@ export default class DiamondReactionChamber extends Template {
 
         let ports = [];
 
-        ports.push(new ComponentPort(channelWidth / 2 + w, 0, "1", "FLOW"));
+        ports.push(new ComponentPort(l / 2, 0, "1", "FLOW"));
 
-        ports.push(new ComponentPort(channelWidth / 2 + w, 0, l, "2", "FLOW"));
+        ports.push(new ComponentPort(-l / 2, 0, "2", "FLOW"));
 
         return ports;
     }

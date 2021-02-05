@@ -172,6 +172,9 @@ router.get('/terminals', function(req, res, next) {
   let ret = [];
   for(let i=0; i<ports.length; i++){
     let port = ports[i];
+    let drawoffsets = technology.getDrawOffset(params);
+    port.x = port.x + drawoffsets[0];
+    port.y = port.y + drawoffsets[1];
     ret.push(port.toInterchangeV1())
   }
   console.log("Terminals:",primitive, ret)

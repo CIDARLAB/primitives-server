@@ -1,7 +1,6 @@
 import Template from "./template";
 import paper from "paper";
 import ComponentPort from "../core/componentPort";
-import { RedFormat } from "three";
 
 export default class DropletGeneratorT extends Template {
     constructor() {

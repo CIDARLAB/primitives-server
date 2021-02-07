@@ -45,7 +45,7 @@ export default class DiamondReactionChamber extends Template {
             width: 30,
             length: 120,
             height: 10,
-            roation: 0
+            rotation: 0
         };
 
         this.__maximum = {
@@ -125,7 +125,7 @@ export default class DiamondReactionChamber extends Template {
         hex.closed = true;
         hex.rotate(rotation, new paper.Point(px, py));
         hex.fillColor = color;
-        return hex.rotate(rotation, px, py);
+        return hex;
     }
 
     render2DTarget(key, params) {

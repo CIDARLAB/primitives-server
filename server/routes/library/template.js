@@ -152,6 +152,10 @@ export default class Template {
         let renderkeys = this.renderKeys;
         let features = [];
         for(let i =0 ; i<renderkeys.length; i++){
+            if(renderkeys[i] == "INVERSE"){
+                continue;
+              }
+          
           console.log("Rendering layer: " + renderkeys[i]);
           let feature = this.render2D(params, renderkeys[i]);
           features.push(feature);

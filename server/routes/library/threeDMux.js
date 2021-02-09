@@ -1,8 +1,6 @@
 import Template from "./template";
 import paper, { CompoundPath } from "paper";
 import ComponentPort from "../core/componentPort";
-import { ConeBufferGeometry } from "three";
-import Component from "../core/component";
 
 export default class ThreeDMux extends Template{
     constructor() {

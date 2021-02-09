@@ -27,10 +27,11 @@ import LogicArray from "./library/logicArray";
 import PicoInjection from "./library/picoinjection";
 import DropletGeneratorFlowFocus from "./library/dropletGeneratorFlowFocus";
 import DropletGeneratorT from "./library/dropletGeneratorT";
-import DropletMerger from "./library/dropletMerger";
 import Filter from "./library/filter";
 import Merger from "./library/merger";
 import ThreeDMux from "./library/threeDMux";
+import CapacitanceSensor from "./library/capacitancesensor";
+import Sorter from "./library/sorter";
 
 
 import paper, { Key } from "paper";
@@ -66,10 +67,11 @@ let logicarray = new LogicArray();
 let picoinjector = new PicoInjection();
 let flowfocusdroplet = new DropletGeneratorFlowFocus();
 let drolett = new DropletGeneratorT();
-let dropletmerger = new DropletMerger();
 let filter = new Filter();
 let merger = new Merger();
 let threedmux = new ThreeDMux();
+let capsensor = new CapacitanceSensor();
+let sorter = new Sorter();
 
 
 primitive_map.set(port.mint.replace(/\s/g, ''), port);
@@ -97,12 +99,13 @@ primitive_map.set(node.mint.replace(/\s/g, ''), node);
 primitive_map.set(threedmux.mint.replace(/\s/g, ''), threedmux);
 primitive_map.set(merger.mint.replace(/\s/g, ''), merger);
 primitive_map.set(filter.mint.replace(/\s/g, ''), filter);
-primitive_map.set(dropletmerger.mint.replace(/\s/g, ''), dropletmerger);
 primitive_map.set(drolett.mint.replace(/\s/g, ''), drolett);
 primitive_map.set(flowfocusdroplet.mint.replace(/\s/g, ''), flowfocusdroplet);
 primitive_map.set(picoinjector.mint.replace(/\s/g, ''), picoinjector);
 primitive_map.set(logicarray.mint.replace(/\s/g, ''), logicarray);
 primitive_map.set(squareCellTrap.mint.replace(/\s/g, ''), squareCellTrap);
+primitive_map.set(capsensor.mint.replace(/\s/g, ''), capsensor);
+primitive_map.set(sorter.mint.replace(/\s/g, ''), sorter);
 console.log(primitive_map.keys());
 
 

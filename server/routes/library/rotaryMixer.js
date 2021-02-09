@@ -1,7 +1,6 @@
 import Template from "./template";
 import paper from "paper";
 import ComponentPort from "../core/componentPort";
-import components from "@dagrejs/graphlib/lib/alg/components";
 
 export default class RotaryMixer extends Template {
     constructor() {

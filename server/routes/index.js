@@ -32,6 +32,7 @@ import Merger from "./library/merger";
 import ThreeDMux from "./library/threeDMux";
 import CapacitanceSensor from "./library/capacitancesensor";
 import Sorter from "./library/sorter";
+import Splitter from "./library/splitter";
 
 
 import paper, { Key } from "paper";
@@ -72,6 +73,7 @@ let merger = new Merger();
 let threedmux = new ThreeDMux();
 let capsensor = new CapacitanceSensor();
 let sorter = new Sorter();
+let splitter = new Splitter();
 
 
 primitive_map.set(port.mint.replace(/\s/g, ''), port);
@@ -106,6 +108,7 @@ primitive_map.set(logicarray.mint.replace(/\s/g, ''), logicarray);
 primitive_map.set(squareCellTrap.mint.replace(/\s/g, ''), squareCellTrap);
 primitive_map.set(capsensor.mint.replace(/\s/g, ''), capsensor);
 primitive_map.set(sorter.mint.replace(/\s/g, ''), sorter);
+primitive_map.set(splitter.mint.replace(/\s/g, ''), splitter);
 console.log(primitive_map.keys());
 
 

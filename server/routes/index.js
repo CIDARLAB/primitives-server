@@ -162,6 +162,9 @@ router.get('/dimensions', function(req, res, next) {
   let renderkeys = technology.renderKeys;
   let features = [];
   for(let i =0 ; i<renderkeys.length; i++){
+    if(renderkeys[i] == "INVERSE"){
+      continue;
+    }
     console.log("Rendering layer: " + renderkeys[i]);
     let feature = technology.render2D(params, renderkeys[i]);
     features.push(feature);
